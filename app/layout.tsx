@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} w-full`}>
-        <Link href="/" className="text-xl mt-4 mx-auto block">Home</Link>
+        <Link href="/" className="text-xl mt-4 mx-auto w-24 block">Home</Link>
         {children}
       </body>
     </html>
