@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+.form-entry {
+  @apply flex flex-col gap-1;
+}
+
+.form-entry label {
+  @apply font-semibold;
+}
+
+.error-msg {
+  @apply text-red-500;
+}
+
+input[type="text"],
+input[type="password"] {
+  @apply px-4 py-2 rounded-md border border-gray-300;
+}
+
+button[type="submit"] {
+  @apply px-4 py-2 rounded-md bg-blue-500 text-white;
+}
